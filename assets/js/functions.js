@@ -37,13 +37,7 @@ $(document).ready(function() {
     // slide In Sections
     $(window).on('scroll', function() {
         var scrollCheck = $(window).scrollTop();
-        
-        // if(scrollCheck > $('.about-info-wrapper').offset().top - ($(window).height() / 1.2)) {
-        //     $('.about-info-wrapper').css({
-        //        'transform' : 'translateY(0)',
-        //        'opacity' : 1 
-        //     });
-        // }
+ 
         
         if(scrollCheck > $('.about-lang-wrapper').offset().top - ($(window).height() / 1.2)) {
             $('.about-lang-wrapper').css({

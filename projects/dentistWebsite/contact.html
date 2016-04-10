@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script   src="https://code.jquery.com/jquery-2.2.1.min.js"   integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="   crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/css/master.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="public/css/contact.css" media="screen" title="no title" charset="utf-8">
+    <title>H. John Richmond DMD</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- <a href="#"><img src="http://www.clker.com/cliparts/G/W/0/s/v/o/large-tooth-outline-md.png" alt=""/></a> -->
+          <a class="navbar-brand" href="#">Richmond Dentistry</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Staff</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+      <div class="contactHeader">
+        <hr class="style15">
+      </div>
+    </div>
+
+    <div class="containerInfo">
+      <div class="row">
+        <div class="col">
+          <h3>Location</h3>
+          <ul>
+            <li><strong>Address:</strong> 1906 59th Street West, Suite H 34209</li>
+            <li><strong>Phone:</strong> 941-761-9603</li>
+            <li><strong>Email:</strong> info@richmonddmd.com</li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h3>Office Hours</h3>
+          <ul>
+            <li><strong>Monday - Friday </strong> </p>8:00 - 5:00</p></li>
+            <li><strong>Saturday </strong> </p> 8:00 - 12:00</p></li>
+            <li><strong>Sunday </strong> </p> Closed</p></li>
+          </ul>
+
+        </div>
+
+        <div class="col thirdCol">
+          <h3>About</h3>
+          <p>
+            Dr. Richmonds Dental Office is located at 1906 59th Street West, Suite H Bradenton, FL From the North via Manatee Ave Go south on 59th Street West . Proceed to the 2nd traffic light (this will be 17th Ave. West). Turn right (west) onto 17th Ave. West. The 3rd driveway on the left is the entrance into the office parking lot. Turn left (South) from 17 Ave. into the parking lot. The building on your right is the office. The patient entrance is on the south side, with parking in front. From the South via Cortez Road Take Go North onto 59th Street West. Proceed to the 3rd traffic light (this will be 17th Ave West). Turn left (West onto 17th Ave. West. The 3rd driveway on the left is the entrance into the office parking lot. Turn left (South) from 17th Ave. into the parking lot. The building on your right is the office. The patient entrance is on the south side, with parking in front.
+           </p>
+        </div>
+
+        <div class="col-md">
+          <h3><a href="https://www.google.com/maps/dir/''/dr+richmond/@27.4846127,-82.6929008,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x88c316e622969e0b:0xf46d80b7180c7811!2m2!1d-82.6228605!2d27.4846302">Google Maps</a></h3>
+          <div id="map"></div>
+          <script>
+            function initMap() {
+
+              var myLatLng = {lat: 27.484603, lng: -82.622944};
+              var mapDiv = document.getElementById('map');
+                var map = new google.maps.Map(mapDiv, {
+                  center: {lat: 27.484603, lng: -82.622944},
+                  zoom: 12
+              });
+
+              var marker = new google.maps.Marker({
+                 position: myLatLng,
+                 map: map,
+                 title: 'Dr. Richmond',
+               });
+
+
+               marker.addListener('click', function() {
+                  infowindow.open(map, marker);
+                });
+            }
+          </script>
+          <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+
+        </div>
+    </div>
+  </div>
+
+    <div class="footer">
+      <ul>
+        <li><a href="https://www.facebook.com/pages/Dr-H-John-Richmond-DMD-PA/236708316472493?ref=ts&fref=ts">Facebook</a></li>
+        <li><a href="https://twitter.com/DrRichmondDMD">Twitter</a></li>
+        <li><a href="https://plus.google.com/+Richmonddmd">Google+</a></li>
+      </ul>
+    </div>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </body>
+</html>

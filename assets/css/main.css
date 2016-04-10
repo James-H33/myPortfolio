@@ -296,28 +296,42 @@ body {
 
 .project-1 {
   width: 100%;
-  background: url("../imgs/earthHub.PNG");
+  background: url("../imgs/earthHubCrop.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
 
 .project-2 {
   width: 100%;
-  background: url("../imgs/trevsLandscape.PNG");
+  background: url("../imgs/trevsLandscapeCrop.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
 
 .project-3 {
   width: 100%;
-  background: url("../imgs/blackBirdClothing.PNG");
+  background: url("../imgs/blackBirdClothingCrop.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
 
 .project-4 {
   width: 100%;
-  background: url("../imgs/foundationHomes.PNG");
+  background: url("../imgs/foundationHomesCrop.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.project-5 {
+  width: 100%;
+  background: url("../imgs/trevsJekyllCrop.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.project-6 {
+  width: 100%;
+  background: url("http://bronxhealthcenter.com/wp-content/uploads/2013/04/Boy_dentist_6401.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
@@ -460,7 +474,8 @@ body {
     font-size: 16px;
     text-align: center;
     line-height: 25px;
-    padding: 20px 0; }
+    padding: 45px 0;
+    padding-bottom: 80px; }
 
 .about-lang-animate {
   width: 310px;

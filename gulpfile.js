@@ -24,6 +24,7 @@ gulp.task('sass', function() {
     return sass('assets/scss/main.scss')
         .on('error', sass.logError)
         .pipe(plumber())
+        .pipe(uglify())
         .pipe(autoprefixer({
                 browser: ['last 2 versions'],
                 cascade: false
