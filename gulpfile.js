@@ -12,7 +12,7 @@ gulp.task('serve', function() {
             baseDir: "./"
         }
     });
-    
+
     gulp.watch("assets/scss/**/*.scss", ['sass']);
     gulp.watch("assets/js/*.js").on('change', browserSync.reload);
     gulp.watch("./**/*.html").on('change', browserSync.reload);
@@ -24,7 +24,7 @@ gulp.task('sass', function() {
     return sass('assets/scss/main.scss')
         .on('error', sass.logError)
         .pipe(plumber())
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(autoprefixer({
                 browser: ['last 2 versions'],
                 cascade: false

@@ -1,9 +1,9 @@
 @import 'vars';
 
-html {
+* {
     padding: 0;
     margin: 0;
-    font-family: $main-font; 
+    font-family: $main-font;
 }
 
 
@@ -43,9 +43,9 @@ body {
     width: 25px;
     border-radius: 10px;
     background: $f-color;
-    position: absolute; 
+    position: absolute;
     transition: all 0.4s ease;
-    left: 2px;   
+    left: 2px;
 }
 
 #nav-icon span:nth-child(1) {
@@ -78,7 +78,7 @@ body {
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    
+
      ul {
         width: 100%;
         list-style: none;
@@ -89,15 +89,15 @@ body {
         right: 30px;
         top: 12px;
     }
-    
+
     li {
         visibility: hidden;
         display: inline-block;
-        padding: 0 10px; 
+        padding: 0 10px;
         padding-bottom: 5px;
     }
 
-    
+
     h1 {
         font-size: 20px;
         display: inline-block;
@@ -106,19 +106,19 @@ body {
         top: 10px;
         left: 30px;
     }
-    
+
     a {
         text-decoration: none;
         color: $f-color;
         font-family: $thin-font;
         font-size: 1em;
-        letter-spacing: 2px; 
+        letter-spacing: 2px;
     }
-    
+
     li:hover {
         border-bottom: 2px solid $f-color;
     }
-} 
+}
 
 .menu-overlay {
     width: 100%;
@@ -145,20 +145,20 @@ body {
     align-items: center;
     transform: translateY(-150px);
     transition: all 0.2s ease;
-   
-    
+
+
     p {
         text-align: center;
         font-weight: bold;
         padding: 30px 0;
     }
-    
+
     hr {
         width: 99%;
         max-width: 400px;
         margin: 0 auto;
     }
-    
+
     ul {
         width: 100%;
         max-width: 100%;
@@ -167,12 +167,12 @@ body {
         text-align: center;
         padding: 30px 0;
     }
-    
+
     li {
         display: inline-block;
         padding: 0 20px;
     }
-    
+
     a {
         color: $f-color;
         font-size: 22px;
@@ -180,7 +180,7 @@ body {
         letter-spacing: 2px;
         text-decoration: none;
     }
-    
+
     i {
         font-size: 2em;
     }
@@ -199,21 +199,21 @@ body {
 }
 
 @media (min-width: 769px) {
-    
+
     #nav-icon {
         visibility: hidden;
     }
-    
+
     .nav-display {
-        
+
        li {
         visibility: visible;
         display: inline-block;
-        padding: 0 10px; 
+        padding: 0 10px;
         padding-bottom: 5px;
        }
     }
-    
+
 }
 
 
@@ -221,7 +221,7 @@ body {
 
 
 
-// INTRO SECTION 
+// INTRO SECTION
 
 .index-intro-wrapper {
     width: 100%;
@@ -241,20 +241,20 @@ body {
     display: flex;
     background: rgba(0, 0, 0, 0.6);
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     color: #f9f9f9;
-    
+
     h1 {
-      font-size: 2.8em;  
+      font-size: 2.8em;
     }
-    
+
     p {
-       font-size: 1.5em; 
+       font-size: 1.5em;
        font-family: $thin-font;
     }
 
-} 
+}
 
 .index-page-scroll {
     width: 10%;
@@ -274,15 +274,15 @@ body {
     }
 
 @media (min-width: 769px) {
-    
+
     .index-intro-wrapper {
         background-attachment: fixed;
     }
-    
+
     .index-page-scroll {
         font-size: 4em;
     }
-    
+
 }
 
 // INTRO SECTION END
@@ -293,8 +293,8 @@ body {
 
 .index-project-wrapper {
     width: 100%;
-    height: auto;  
-    margin: 0; 
+    height: auto;
+    margin: 0;
 }
 
 .index-project-display {
@@ -302,14 +302,14 @@ body {
     max-width: 1400px;
     height: auto;
     margin: 0 auto;
-  
-    
+
+
     li {
         list-style: none;
         position: relative;
         float: left;
     }
-    
+
     h2 {
         color: #fff;
         font-style: 20px;
@@ -317,7 +317,7 @@ body {
         padding-top: 10px;
         padding-left: 10px;
     }
-    
+
     h2:after {
         content: ' ';
         display: block;
@@ -327,15 +327,15 @@ body {
         border-bottom: 3px solid #fff;
         background-color: #fff;
     }
-  
-    
+
+
     p {
        color: #fff;
        line-height: 1.5em;
        margin-top: 2.7em;
        margin-left: 10px;
     }
-    
+
     i {
         font-size: 25px;
         position: absolute;
@@ -357,7 +357,7 @@ body {
     opacity: 1;
 }
 
-// All Project items 
+// All Project items
 
 
 .project-1 {
@@ -408,6 +408,15 @@ body {
    background-repeat: no-repeat;
 }
 
+.project-7 {
+   width: 100%;
+   background: url('http://www.psdgraphics.com/file/white-egg.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+
 // All Projects End
 
 .project-control {
@@ -418,21 +427,21 @@ body {
 }
 
 @media (min-width: 769px) {
-    
+
     .project-control {
         width: 33.33%;
         height: 200px;
     }
-  
+
 }
 
 @media (min-width: 1200px) {
-    
+
     .project-control {
         width: 25%;
         height: 200px;
-    }  
-    
+    }
+
 }
 
 // Project SECTION END
@@ -459,7 +468,7 @@ body {
     background: $f-color;
     background-size: cover;
     background-position: top;
-    
+
 }
 
 .about-intro-overlay {
@@ -473,11 +482,11 @@ body {
     height: 100%;
     margin: 0 auto;
     color: #fff;
-    font-size: 2.4em; 
+    font-size: 2.4em;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
     span {
        margin-left: 25px;
        padding: 20px 0;
@@ -489,7 +498,7 @@ body {
 .about-page-scroll {
     width: 100%;
     max-width: 70px;
-    cursor: pointer; 
+    cursor: pointer;
     transition: all 0.3s ease;
 }
 
@@ -498,27 +507,27 @@ body {
 }
 
 @media (min-width: 600px) {
-    
+
     .about-intro-display {
         font-size: 3em;
     }
-    
+
 }
 
 @media (min-width: 769px) {
-    
+
     .about-intro-display {
         font-size: 4em;
     }
-    
+
 }
 
 @media (min-width: 1000px) {
-    
+
     .about-intro-display {
         font-size: 4.5em;
     }
-    
+
 }
 
 // ABOUT INTRO END
@@ -538,9 +547,9 @@ body {
     max-width: 1400px;
     margin: 0 auto;
     position: relative;
-   
+
     }
-    
+
 
 .about-info-display {
     width: 100%;
@@ -549,8 +558,8 @@ body {
     margin: 0 auto;
     background: rgba(250, 250, 250, 0.3);
 
-    
-    
+
+
     h1 {
         color: $f-color;
         font-size: 3.5em;
@@ -559,7 +568,7 @@ body {
         // border-bottom: 5px solid #1d1d1d;
         z-index: 100;
         }
-    
+
     p {
         max-width: 310px;
         font-size: 1.5em;
@@ -568,19 +577,19 @@ body {
         padding-top: 40px;
         letter-spacing: 1px;
     }
-    
-   
+
+
 }
 
 @media (min-width: 769px) {
-    
+
     .about-info-display {
-        
+
         h1 {
             font-size: 4em;
             margin-left: 50px;
         }
-        
+
         p {
             max-width:500px;
             font-size: 2em;
@@ -588,7 +597,7 @@ body {
             padding-top: 50px;
         }
     }
-    
+
 }
 
 .about-lang-wrapper {
@@ -600,8 +609,8 @@ body {
     opacity: 0;
     transform: translateY(150px);
     transition: all 0.5s ease;
-    
-    
+
+
 }
 
 .about-lang-display {
@@ -609,14 +618,14 @@ body {
    max-width:1080px;
    height: 100%;
    margin: 0 auto;
-   
+
    h1 {
        font-size: 30px;
        font-family: $thin-font;
        text-align: center;
        padding-top: 50px;
    }
-   
+
    p {
        font-size: 16px;
        text-align: center;
@@ -624,10 +633,10 @@ body {
        padding: 45px 0;
        padding-bottom: 80px;
    }
-   
-   
+
+
  }
- 
+
  .about-lang-animate {
      width: 310px;
      height: 35px;
@@ -635,51 +644,51 @@ body {
      position: relative;
      overflow: hidden;
      margin: 0 auto;
-    
+
     p {
         font-weight: bold;
         font-size: 20px;
         padding-left: 20px;
         display: inline;
-        
+
         &:before {
             content: '[';
             left: 0;
-        }   
-        
+        }
+
         &:after {
             content:']';
             position:absolute;
             right: 10px;
         }
-    
+
         &:before, &:after {
           position: absolute;
           top:0;
           color:#16a085;
           font-size:35px;
           animation:2s linear 0s normal none infinite opacity;
-        
+
         }
-    
+
    }
- 
-     
+
+
    ul {
        list-style: none;
        animation:10s linear 0s normal none infinite change;
 
    }
-   
+
    li {
        line-height: 30px;
        padding: 1px 0;
        padding-left: 90px;
        font-weight: bold;
    }
-     
+
  }
- 
+
 
 // ABOUT LANG KEYS
 @keyframes change {
@@ -709,7 +718,7 @@ body {
 
 
 
-// FOOTER SECTION 
+// FOOTER SECTION
 
 .footer-wrapper {
     width: 100%;
@@ -724,20 +733,20 @@ body {
     max-width: 1080px;
     height: 100%;
     margin: 0 auto;
-   
-    
+
+
     p {
         text-align: center;
         font-weight: bold;
         padding: 30px 0;
     }
-    
+
     hr {
         width: 100%;
         max-width: 400px;
         margin: 0 auto;
     }
-    
+
     ul {
         list-style: none;
         width: 100%;
@@ -745,14 +754,14 @@ body {
         margin: 0 auto;
         text-align: center;
         padding: 30px 0;
-        
+
     }
-    
+
     li {
         display: inline-block;
         padding: 0 20px;
     }
-    
+
         a {
         color: #000;
         font-size: 2em;
@@ -760,7 +769,7 @@ body {
         letter-spacing: 2px;
         text-decoration: none;
         }
-   
+
 }
 
 .footer-nav {
@@ -769,19 +778,18 @@ body {
    margin: 0 auto;
    text-align: center;
    padding: 20px 0;
-   
+
    h2 {
         text-align: center;
         padding: 30px 0;
     }
-    
+
       a {
         color: #000;
         font-size: 1em;
         text-decoration: none;
         }
-    
+
 }
 
 // FOOTER SECTION END
-

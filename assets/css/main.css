@@ -336,6 +336,13 @@ body {
   background-position: center;
   background-repeat: no-repeat; }
 
+.project-7 {
+  width: 100%;
+  background: url("http://www.psdgraphics.com/file/white-egg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
 .project-control {
   width: 50%;
   min-width: 160px;
